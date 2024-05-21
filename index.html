@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio Demo Website for paper: "High Fidelity Text-Guided Music Editing Via
+		Single-Stage Flow Matching".</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>High Fidelity Text-Guided Music Editing Via
+			Single-Stage Flow Matching</h1>
+		<p>Submitted to NeurIPS 2024</p>
+	</header>
+	<main>
+		<section class="abstract">
+			<h2>Abstract</h2>
+			<p>We introduce a simple and fast text-controllable high-fidelity music generation and editing model.
+				It operates on sequences of continuous latent representations from a quantizer-free Variational AutoEncoder (VAE) 48 kHz stereo codec that eliminates the information loss drawback of discrete representations.
+				Based on a diffusion transformer architecture trained on a flow-matching objective, the model can generate diverse high quality stereo samples, with simple text descriptions.
+				We also explore text-guided style transfer and editing and demonstrate the impressive performance of the model for a variety of music editing tasks.
+				Evaluations are conducted on both objective and subjective metrics and demonstrate that the proposed model is not only superior to the evaluated baseline on a standard text-to-music benchmark but also benefits from impressive style-transfer capabilities that are inherent to the model design.
+				Model implementation and weights will be publicly made available to foster further research on music editing.</p>
+		</section>
+		<section class="audio-demos">
+			<h2>Text-to-Music Generation Demos</h2>
+			<div class="demo">
+				<h3>MelodyFlow</h3>
+				<audio controls>
+					<source src="audio/demo1.mp3" type="audio/mp3">
+					Your browser does not support the audio element.
+				</audio>
+				<button class="play-pause">Play</button>
+			</div>
+			<div class="demo">
+				<h3>Ground Truth</h3>
+				<audio controls>
+					<source src="audio/demo2.mp3" type="audio/mp3">
+					Your browser does not support the audio element.
+				</audio>
+				<button class="play-pause">Play</button>
+			</div>
+			<!-- Add more demo sections here -->
+		</section>
+	</main>
+	<footer>
+		<center><p>&copy; 2024 MelodyFlow. All rights reserved.</p></center>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

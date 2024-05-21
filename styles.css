@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+}
+
+.abstract {
+	background-color: #f7f7f7;
+	padding: 20px;
+}
+
+.author-list {
+	background-color: #f7f7f7;
+	padding: 20px;
+}
+
+.author-list ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.author-list li {
+	margin-bottom: 10px;
+}
+
+.audio-demos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.demo {
+	background-color: #fff;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: calc(33.33% - 20px);
+}
+
+.demo h3 {
+	margin-top: 0;
+}
+
+.demo audio {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.demo button.play-pause {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.demo button.play-pause:hover {
+	background-color: #3e8e41;
+}
+
+.demo button.play-pause:active {
+	background-color: #3e8e41;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
